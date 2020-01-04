@@ -10,30 +10,6 @@
 >
 > *Best of luck to you!*
 
-Translations:
-- [中文版本](translations/README-cn.md)
-- [Tiếng Việt - Vietnamese](translations/README-vi.md)
-- [Español](translations/README-es.md)
-- [Português Brasileiro](translations/README-ptbr.md)
-
-Translations in progress:
-- [हिन्दी](https://github.com/jwasham/coding-interview-university/issues/81)
-- [עברית](https://github.com/jwasham/coding-interview-university/issues/82)
-- [Bahasa Indonesia](https://github.com/jwasham/coding-interview-university/issues/101)
-- [Arabic](https://github.com/jwasham/coding-interview-university/issues/98)
-- [Turkish](https://github.com/jwasham/coding-interview-university/issues/90)
-- [French](https://github.com/jwasham/coding-interview-university/issues/89)
-- [Russian](https://github.com/jwasham/coding-interview-university/issues/87)
-- [Ukrainian](https://github.com/jwasham/coding-interview-university/issues/106)
-- [Korean(한국어)](https://github.com/jwasham/coding-interview-university/issues/118)
-- [Telugu](https://github.com/jwasham/coding-interview-university/issues/117)
-- [Polish](https://github.com/jwasham/coding-interview-university/issues/122)
-- [Urdu](https://github.com/jwasham/coding-interview-university/issues/140)
-- [Thai](https://github.com/jwasham/coding-interview-university/issues/156)
-- [Greek](https://github.com/jwasham/coding-interview-university/issues/166)
-- [Italian](https://github.com/jwasham/coding-interview-university/issues/170)
-- [Malayalam](https://github.com/jwasham/coding-interview-university/issues/239)
-- [Japanese (日本語)](https://github.com/jwasham/coding-interview-university/issues/257)
 
 ## What is it?
 
@@ -491,7 +467,7 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
 
 ## Algorithmic complexity / Big-O / Asymptotic analysis
 - nothing to implement
-- [ ] [Harvard CS50 - Asymptotic Notation (video)](https://www.youtube.com/watch?v=iOq5kSKqeR4)
+- [x] [Harvard CS50 - Asymptotic Notation (video)](https://www.youtube.com/watch?v=iOq5kSKqeR4)
 - [ ] [Big O Notations (general quick tutorial) (video)](https://www.youtube.com/watch?v=V6mKVRU1evU)
 - [ ] [Big O Notation (and Omega and Theta) - best mathematical explanation (video)](https://www.youtube.com/watch?v=ei-A_wy5Yxw&index=2&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN)
 - [ ] Skiena:
@@ -527,28 +503,28 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
         - [Jagged Arrays (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Jagged-arrays/149042/177106-4.html)
         - [Resizing arrays (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Resizable-arrays/149042/177108-4.html)
     - [ ] Implement a vector (mutable array with automatic resizing):
-        - [ ] Practice coding using arrays and pointers, and pointer math to jump to an index instead of using indexing.
-        - [ ] new raw data array with allocated memory
+        - [x] Practice coding using arrays and pointers, and pointer math to jump to an index instead of using indexing.
+        - [x] new raw data array with allocated memory
             - can allocate int array under the hood, just not use its features
             - start with 16, or if starting number is greater, use power of 2 - 16, 32, 64, 128
-        - [ ] size() - number of items
-        - [ ] capacity() - number of items it can hold
-        - [ ] is_empty()
-        - [ ] at(index) - returns item at given index, blows up if index out of bounds
-        - [ ] push(item)
-        - [ ] insert(index, item) - inserts item at index, shifts that index's value and trailing elements to the right
-        - [ ] prepend(item) - can use insert above at index 0
-        - [ ] pop() - remove from end, return value
-        - [ ] delete(index) - delete item at index, shifting all trailing elements left
-        - [ ] remove(item) - looks for value and removes index holding it (even if in multiple places)
-        - [ ] find(item) - looks for value and returns first index with that value, -1 if not found
-        - [ ] resize(new_capacity) // private function
+        - [x] size() - number of items
+        - [x] capacity() - number of items it can hold
+        - [x] is_empty()
+        - [x] at(index) - returns item at given index, blows up if index out of bounds
+        - [x] push(item)
+        - [x] insert(index, item) - inserts item at index, shifts that index's value and trailing elements to the right
+        - [x] prepend(item) - can use insert above at index 0
+        - [x] pop() - remove from end, return value
+        - [x] delete(index) - delete item at index, shifting all trailing elements left
+        - [x] remove(item) - looks for value and removes index holding it (even if in multiple places)
+        - [x] find(item) - looks for value and returns first index with that value, -1 if not found
+        - [x] resize(new_capacity) // private function
             - when you reach capacity, resize to double the size
             - when popping an item, if size is 1/4 of capacity, resize to half
-    - [ ] Time
+    - [x] Time
         - O(1) to add/remove at end (amortized for allocations for more space), index, or update
         - O(n) to insert/remove elsewhere
-    - [ ] Space
+    - [x] Space
         - contiguous in memory, so proximity helps performance
         - space needed = (array capacity, which is >= n) * size of item, but even if 2n, still O(n)
 
